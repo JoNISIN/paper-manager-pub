@@ -6,49 +6,6 @@ Reference to the command design of  git and SQL, the command design is close to 
 
 The information storing is depending on the md5 code of file, and support record distributed file with same md5 code.
 
-**Update in v1.8.2(0220)**:
-1. fix the bug can not use `@`
-
-**Update in v1.8.2**:
-1. feature `--write` will show the number of writing words.
-2. Now `--select` can parse the word near `:` and `()`.
-3. New `--reading` can filter the tracking record which read status is "reading".
-
-**Update in v1.8.1**: 
-1. `--remove` feature is done, which can remove tracking on JSON record
-2. `--clear` feature is done, which can find the xml file do not in tracking
-
-**Update in v1.8**: 
-1. Add `--merge` feature, but do not suggest
-2. Simplify `--update` print out
-3. Fix the undefined operation in same file name scenes
-4. Beautify compressing process
-5. Modify name logic for xml files
-6. Modify logic of description_file_namer to support above modify
-
-**Update in v1.7**: 
-1. `--write` feature is done, which can modify `review`, `bib` and `abstract`(`abs`) by default editor, instead of `--get_in`.
-2. Now, if selected results is nothing, it will print out the error message
-3. Fix the bug of cannot print out the read status message.
-
-**Update in v1.6**: 
-1. More clearly format for detail message
-2. `--filters` feature is done
-3. Now, the record need to fix will print out message in `--list` and `--select`
-4. More clearly MSG for re-link process
-
-**Update in v1.5.1**: 
-1. More readable, simple and beautiful print out result.
-2. Now can use `--export blank` to export selected items blank markdown file which has md5 in file name.
-
-**Update in v1.5**: 
-1. In v1.5 version, optimize the print out format, now more clearly and concise.
-2. Now, it can open the designated pdf file and its directory by `--open` and `--opendir`. 
-3. More powerful, useful and clearly Tag function
-4. More efficient restore command
-5. The intersection search i.e., inner join selecting
-
-
 ## Content
 
 * [Intro](#intro)
@@ -69,6 +26,7 @@ The information storing is depending on the md5 code of file, and support record
     * [Update and restore](#update-and-restore)
     * [Backup and git](#backup-and-git)
   * [Other Command Support](#other-command-support)
+  * [Update Info](#update-info)
 
 ## Intro
 
@@ -511,4 +469,48 @@ Then, because this command do not remove the xml files, at the same time we prov
 ```bash
 paper_manager --clear
 ```
+
+## Update Info
+
+**Update in v1.8.2(0220)**:
+1. fix the bug can not use `@`
+
+**Update in v1.8.2**:
+1. feature `--write` will show the number of writing words.
+2. Now `--select` can parse the word near `:` and `()`.
+3. New `--reading` can filter the tracking record which read status is "reading".
+
+**Update in v1.8.1**: 
+1. `--remove` feature is done, which can remove tracking on JSON record
+2. `--clear` feature is done, which can find the xml file do not in tracking
+
+**Update in v1.8**: 
+1. Add `--merge` feature, but do not suggest
+2. Simplify `--update` print out
+3. Fix the undefined operation in same file name scenes
+4. Beautify compressing process
+5. Modify name logic for xml files
+6. Modify logic of description_file_namer to support above modify
+
+**Update in v1.7**: 
+1. `--write` feature is done, which can modify `review`, `bib` and `abstract`(`abs`) by default editor, instead of `--get_in`.
+2. Now, if selected results is nothing, it will print out the error message
+3. Fix the bug of cannot print out the read status message.
+
+**Update in v1.6**: 
+1. More clearly format for detail message
+2. `--filters` feature is done
+3. Now, the record need to fix will print out message in `--list` and `--select`
+4. More clearly MSG for re-link process
+
+**Update in v1.5.1**: 
+1. More readable, simple and beautiful print out result.
+2. Now can use `--export blank` to export selected items blank markdown file which has md5 in file name.
+
+**Update in v1.5**: 
+1. In v1.5 version, optimize the print out format, now more clearly and concise.
+2. Now, it can open the designated pdf file and its directory by `--open` and `--opendir`. 
+3. More powerful, useful and clearly Tag function
+4. More efficient restore command
+5. The intersection search i.e., inner join selecting
 
