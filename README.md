@@ -26,7 +26,7 @@ The information storing is depending on the md5 code of file, and support record
     * [Update and restore](#update-and-restore)
     * [Backup and git](#backup-and-git)
   * [Other Command Support](#other-command-support)
-  * [Update Info](#update-info)
+* [Update Info](#update-info)
 
 ## Intro
 
